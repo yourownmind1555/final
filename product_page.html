@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Product Page</title>
+  </head>
+  <style>
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed,
+    figure, figcaption, footer, header, hgroup,
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section {
+      display: block;
+    }
+    body {
+      line-height: 1;
+    }
+    ol, ul {
+      list-style: none;
+    }
+    blockquote, q {
+      quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+      content: '';
+      content: none;
+    }
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+    div.header {
+      width: 1020px;
+      height: 132px;
+      background-color: #305673;
+      padding-top: 12px;
+    }
+    h1.shmamazonheader {
+      font-size: 26px;
+      font-family: serif;
+      color: white;
+      margin-left: 440px;
+      margin-top: 12px;
+      float: left;
+    }
+    div.navigationdiv {
+      clear: both;
+      margin-top: 90px;
+      margin-left: 15px;
+    }
+    h1.navigation {
+      color: white;
+      font-size: 16px;
+      float: left;
+      margin-left: 25px;
+      font-family: sans-serif;
+    }
+    img.cart {
+      float: right;
+      margin-top: 0px;
+    }
+    div.body {
+      height: 863px;
+      width: 1020px;
+      background-color: #e3dfd5;
+    }
+    div.content {
+      width: 940px;
+      margin-left: 40px;
+      padding-top: 20px;
+    }
+    h1.location {
+      font-family: sans-serif;
+      margin-top: 20px;
+    }
+    div.productpics {
+      width: 380px;
+      height: 300px;
+      float: left;
+      margin-top: 40px;
+    }
+    div.smallpicscontainer {
+      width: 60px;
+      height: auto;
+      float: left;
+      margin-right: 20px;
+    }
+    img.smallpics {
+      margin-bottom: 10px;
+    }
+    div.info {
+      width: 300px;
+      height: 300px;
+      float: left;
+    }
+    h1.producttitle {
+      font-family: sans-serif;
+      color: #305673;
+      font-size: 30px;
+      margin-left: 50px;
+      margin-top: 60px;
+    }
+    div.iphonefeatures {
+      margin-left: 35px;
+      margin-top: 20px;
+    }
+    li.featurestext {
+      font-family: sans-serif;
+      font-size: 18px;
+      line-height: 22px;
+    }
+    div.buy {
+      float: left;
+      width: 220px;
+      margin-top: 40px;
+      margin-left: 40px;
+    }
+    div.addcart {
+      background-color: #e4b833;
+      width: 220px;
+      height: 46px;
+    }
+    h1.carttext {
+      color: #67532b;
+      font-family: sans-serif;
+      font-size: 25px;
+      position: relative;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-27%)translateY(-50%);
+    }
+    div.price1 {
+      float: left;
+      margin-left: 18px;
+    }
+    h1.price1text {
+      font-size: 25px;
+      font-family: sans-serif;
+      margin-top: 30px;
+    }
+    h1.price2text {
+      font-size: 25px;
+      font-family: sans-serif;
+      margin-top: 30px;
+      color: #22881d;
+    }
+    div.warrenty {
+      background-color: white;
+      width: 220px;
+      height: 90px;
+      clear: both;
+      margin-top: 160px;
+    }
+    div.delivery {
+      clear: both;
+      height: 60px;
+      width: 500px;
+      margin-top: 360px;
+      margin-left: 400px;
+    }
+    img.bottompic {
+      margin-right: 20px;
+      float: left;
+    }
+    div.deliverydiv {
+      height: 60px;
+      width: 170px;
+      float: left;
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+    h1.deliverytext {
+      font-family: sans-serif;
+      font-size: 13px;
+      color: #4c4c4c;
+    }
+    h1.features2 {
+      font-size: 36px;
+      color: #305673;
+      font-family: sans-serif;
+      clear: both;
+    }
+    img.deal1 {
+      margin-top: 46px;
+      float: left;
+    }
+    img.deal2 {
+      margin-top: 46px;
+      margin-left: 20px;
+      float: left;
+    }
+    div.footer {
+      height: 150px;
+      width: 1020px;
+      background-color: #305673;
+      padding-top: 20px;
+    }
+    div.footerdiv {
+      margin-left: 40px;
+      margin-top: 20px;
+    }
+    h1.shmamazonfooter {
+      font-size: 26px;
+      font-family: serif;
+      color: white;
+      margin-bottom: 5px;
+    }
+    h1.footernotes {
+      color: white;
+      margin-top: 5px;
+      font-family: sans-serif;
+      font-size: 12px;
+    }
+    h1.copyright {
+      font-family: sans-serif;
+      font-size: 12px;
+      color: white;
+      margin-top: 15px;
+      margin-left: 450px;
+    }
+  </style>
+  <body>
+    <div class="header">
+      <h1 class="shmamazonheader"> SHMAMAZON </H1>
+      <img class="cart" src="images/cartandjawn.png"/>
+      <div class="navigationdiv">
+        <h1 class="navigation"> Products </h1>
+        <h1 class="navigation"> Orders </h1>
+        <h1 class="navigation"> Contact </h1>
+      </div>
+    </div>
+    <div class="body">
+      <div class="content">
+        <h1 class="location"> Products > Electronics > iPhone 7
+        </h1>
+        <div class="productpics">
+          <div class="smallpicscontainer">
+            <img class="smallpics"src="images/iphones1.png"/>
+            <img class="smallpics"src="images/iphones2.png"/>
+            <img class="smallpics"src="images/iphones3.png"/>
+          </div>
+          <img src="images/iphonem.png"/>
+        </div>
+        <div class="info">
+          <h1 class="producttitle"> iPhone 7
+          </h1>
+          <div class="iphonefeatures">
+            <li class="featurestext">Wide color display (P3) </li>
+            <li class="featurestext">625 cd/m2 max brightness (typial) </li>
+            <li class="featurestext">Dual-domain pixels for wide
+            viewing angles</li>
+            <li class="featurestext">Fingerprint-resistent oleophobic
+            coating</li>
+            <li class="featurestext">suppoirt of display for multiple lan
+            gaugesand characters
+            simultaneously</li>
+          </div>
+        </div>
+        <div class="buy">
+          <div class="addcart">
+            <h1 class="carttext">Add to Cart</h1>
+          </div>
+          <div class="price1">
+            <h1 class="price1text"> Price: </h1>
+            <h1 class="price1text"> Status: </h1>
+          </div>
+          <div class="price1">
+            <h1 class="price2text"> $799.00 </h1>
+            <h1 class="price2text"> In Stock </h1>
+          </div>
+          <div class="warrenty">
+          </div>
+        </div>
+        <div class="delivery">
+          <img class="bottompic" src="images/bottompic1.png"/>
+          <img class="bottompic" src="images/bottompic2.png"/>
+          <img class="bottompic" src="images/bottompic3.png"/>
+          <img class="bottompic" src="images/bottompic4.png"/>
+          <div class="deliverydiv">
+            <h1 class="deliverytext"> Estimated delivery for the product is 2 weeks from order date. </h1>
+          </div>
+        </div>
+        <h1 class="features2"> Daily Deals
+        </h1>
+        <img class="deal1" src="images/deal1.png">
+        <img class="deal2" src="images/deal2.png">
+        <img class="deal2" src="images/deal3.png">
+        <img class="deal2" src="images/deal4.png">
+        <img class="deal2" src="images/deal5.png">
+        <img class="deal2" src="images/deal6.png">
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footerdiv">
+        <h1 class="shmamazonfooter"> SHMAMAZON </h1>
+        <h1 class="footernotes"> Return Policy </h1>
+        <h1 class="footernotes"> Privacy Policy </h1>
+        <h1 class="footernotes"> Contact </h1>
+      </div>
+      <h1 class="copyright"> Copyright Shmamazon 2016 </h1>
+    </div>
+  </body>
+</html>
