@@ -64,8 +64,11 @@
     }
     div.navigationdiv {
       clear: both;
-      margin-top: 90px;
+      margin-top: 80px;
       margin-left: 15px;
+    }
+    a.links {
+      text-decoration: none;
     }
     h1.navigation {
       color: white;
@@ -73,6 +76,18 @@
       float: left;
       margin-left: 25px;
       font-family: sans-serif;
+    }
+    input.searchbar {
+      height: 33px;
+      width: 400px;
+      float: left;
+      margin-top: -13px;
+      margin-left: 255px;
+    }
+    img.searchicon1 {
+      margin-left: 5px;
+      margin-top: -13px;
+      float: left;
     }
     img.cart {
       float: right;
@@ -123,10 +138,22 @@
       margin-left: 35px;
       margin-top: 20px;
     }
+    ul.list {
+      display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+    }
     li.featurestext {
       font-family: sans-serif;
       font-size: 18px;
       line-height: 22px;
+      text-align: left;
+      display: list-item;
+      font-weight: lighter;
     }
     div.buy {
       float: left;
@@ -169,6 +196,9 @@
       height: 90px;
       clear: both;
       margin-top: 160px;
+    }
+    img.lastpic {
+      margin-top: 40px;
     }
     div.delivery {
       clear: both;
@@ -240,12 +270,20 @@
   </style>
   <body>
     <div class="header">
-      <h1 class="shmamazonheader"> SHMAMAZON </H1>
+      <a class="links" href="index.html">
+        <h1 class="shmamazonheader"> SHMAMAZON </H1>
+      </a>
       <img class="cart" src="images/cartandjawn.png"/>
       <div class="navigationdiv">
-        <h1 class="navigation"> Products </h1>
-        <h1 class="navigation"> Orders </h1>
+        <a class="links" href="product_page.html">
+          <h1 class="navigation"> Products </h1>
+        </a>
+        <a class="links" href="Checkout.html">
+          <h1 class="navigation"> Orders </h1>
+        </a>
         <h1 class="navigation"> Contact </h1>
+          <input class="searchbar "type="text" name"searchbar" placeholder="What are you shopping for today?">
+          <img class="searchicon1" src="images/searchicon.png"/>
       </div>
     </div>
     <div class="body">
@@ -264,21 +302,21 @@
           <h1 class="producttitle"> iPhone 7
           </h1>
           <div class="iphonefeatures">
-            <li class="featurestext">Wide color display (P3) </li>
-            <li class="featurestext">625 cd/m2 max brightness (typial) </li>
-            <li class="featurestext">Dual-domain pixels for wide
-            viewing angles</li>
-            <li class="featurestext">Fingerprint-resistent oleophobic
-            coating</li>
-            <li class="featurestext">suppoirt of display for multiple lan
-            gaugesand characters
-            simultaneously</li>
+            <ul class="list">
+              <li class="featurestext">Wide color display (P3) </li>
+              <li class="featurestext">625 cd/m2 max brightness (typial) </li>
+              <li class="featurestext">Dual-domain pixels for wide viewing angles</li>
+              <li class="featurestext">Fingerprint-resistent oleophobic coating</li>
+              <li class="featurestext">suppoirt of display for multiple lan gaugesand characters simultaneously</li>
+            </ul>
           </div>
         </div>
         <div class="buy">
-          <div class="addcart">
-            <h1 class="carttext">Add to Cart</h1>
-          </div>
+          <a class="links" href="Checkout.html">
+            <div class="addcart">
+              <h1 class="carttext">Add to Cart</h1>
+            </div>
+          </a>
           <div class="price1">
             <h1 class="price1text"> Price: </h1>
             <h1 class="price1text"> Status: </h1>
@@ -287,7 +325,8 @@
             <h1 class="price2text"> $799.00 </h1>
             <h1 class="price2text"> In Stock </h1>
           </div>
-          <div class="warrenty">
+          <div class="warenty">
+            <img class="lastpic" src="images/warentybox.png">
           </div>
         </div>
         <div class="delivery">
@@ -311,7 +350,9 @@
     </div>
     <div class="footer">
       <div class="footerdiv">
-        <h1 class="shmamazonfooter"> SHMAMAZON </h1>
+        <a class="links" href="index.html">
+          <h1 class="shmamazonfooter"> SHMAMAZON </h1>
+        </a>
         <h1 class="footernotes"> Return Policy </h1>
         <h1 class="footernotes"> Privacy Policy </h1>
         <h1 class="footernotes"> Contact </h1>

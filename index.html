@@ -52,19 +52,18 @@
       width: 1020px;
       height: 362px;
       background-color: #305673;
-      padding-top: 12px;
+
     }
     h1.shmamazonheader {
       font-size: 26px;
       font-family: serif;
       color: white;
       margin-left: 440px;
-      margin-top: -2px;
       float: left;
+      margin-top: 15px;
     }
     div.navigationdiv {
       clear: both;
-      margin-top: 32px;
       margin-left: 15px;
     }
     h1.navigation {
@@ -73,19 +72,18 @@
       float: left;
       margin-left: 25px;
       font-family: sans-serif;
+      margin-top: 15px;
     }
     img.cart {
       float: right;
-      margin-top: -14px;
     }
     div.headytopper {
-      width: 100%;
+      width: 1020px;
       height: 103px;
       background-color: #305673;
     }
     img.headerpic {
       width: 1020px;
-      position: absolute;
       top: 100px;
     }
     div.headerbottom {
@@ -94,9 +92,20 @@
       background-color: #305673;
       margin-top: -3px;
     }
+    input.searchbar {
+      margin-left: 275px;
+      margin-top: 30px;
+      height: 33px;
+      width: 400px;
+      float: left;
+    }
+    img.searchicon {
+      margin-left: 5px;
+      margin-top: 30px;
+    }
     div.body {
       height: 995px;
-      width: 100%;
+      width: 1020px;
       background-color: #e3dfd5;
       padding-top: 36px;
     }
@@ -142,6 +151,23 @@
     img.catagorypic {
       position: absolute;
     }
+    a.links {
+      text-decoration: none;
+    }
+    div.catagorytitle {
+      height: 50px;
+      width: 230px;
+      background-color: #305673;
+      position: relative;
+      top: 20px;
+      opacity: .8;
+    }
+    div.catagorytitle:hover {
+      height: 56px;
+      width: 250px;
+      top: 17px;
+      right: 10px;
+    }
     div.catagorytitle {
       height: 50px;
       width: 230px;
@@ -182,7 +208,7 @@
     }
     div.footer {
       height: 143px;
-      width: 100%;
+      width: 1020px;;
       background-color: #305673;
       padding-top: 20px;
     }
@@ -212,18 +238,25 @@
   </style>
   <body>
     <div class="header">
-      <div class="header">
-        <h1 class="shmamazonheader"> SHMAMAZON </H1>
+      <div class="headytopper">
+        <a class="links" href="index.html">
+          <h1 class="shmamazonheader"> SHMAMAZON </H1>
+        </a>
         <img class="cart" src="images/cartandjawn.png"/>
         <div class="navigationdiv">
-          <h1 class="navigation"> Products </h1>
-          <h1 class="navigation"> Orders </h1>
+          <a class="links" href="product_page.html">
+            <h1 class="navigation"> Products </h1>
+          </a>
+          <a class="links" href="Checkout.html">
+            <h1 class="navigation"> Orders </h1>
+          </a>
           <h1 class="navigation"> Contact </h1>
         </div>
-      <div class="headytopper">
       </div>
       <img class="headerpic" src="images/headerpic.png">
       <div class="headerbottom">
+        <input class="searchbar "type="text" name"searchbar" placeholder="What are you shopping for today?">
+        <img class="searchicon" src="images/searchicon.png"/>
       </div>
     </div>
     <div class="body">
@@ -231,9 +264,11 @@
         <h1 class="features"> Today's featured Items</h1>
         <div class="catagory1">
           <img class="catagorypic" src="images/catagory1.png">
-          <div class="catagorytitle">
-            <h1 class="catagorytext"> Electronics </h1>
-          </div>
+          <a class="links" href="product_page.html">
+            <div class="catagorytitle">
+              <h1 class="catagorytext"> Electronics </h1>
+            </div>
+          </a>
         </div>
         <div class="catagory2">
           <img class="catagorypic" src="images/catagory2.png">
@@ -265,7 +300,9 @@
     </div>
     <div class="footer">
       <div class="footerdiv">
-        <h1 class="shmamazonfooter"> SHMAMAZON </h1>
+        <a class="links" href="index.html">
+          <h1 class="shmamazonfooter"> SHMAMAZON </h1>
+        </a>
         <h1 class="footernotes"> Return Policy </h1>
         <h1 class="footernotes"> Privacy Policy </h1>
         <h1 class="footernotes"> Contact </h1>
